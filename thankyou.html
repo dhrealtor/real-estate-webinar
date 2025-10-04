@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You – DH REALTOR</title>
+  <link rel="icon" href="dh-logo.png" />
+  <style>
+    :root { --black:#0b0b0c; --white:#ffffff; --gold:#d4af37; --muted:#bfbfbf; --card:rgba(255,255,255,.06); }
+    html, body { height:100%; }
+    body { margin:0; background:var(--black); color:var(--white); font-family: Inter, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif; overflow-x:hidden; }
+    body::before{ content:""; position:fixed; inset:0; z-index:-3;
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00)),
+                  radial-gradient(1000px 500px at 15% -10%, rgba(212,175,55,.18), transparent 60%),
+                  radial-gradient(900px 600px at 90% 120%, rgba(212,175,55,.12), transparent 60%),
+                  linear-gradient(120deg, #0b0b0c, #131316 35%, #0d0d0f 60%, #0b0b0c); }
+    body::after{ content:""; position:fixed; inset:-15% -15% -15% -15%; z-index:-2;
+      background: conic-gradient(from 0deg at 50% 50%, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.04) 10%,
+                rgba(212,175,55,0.08) 22%, rgba(255,255,255,0.05) 34%, rgba(255,255,255,0.00) 45%, rgba(255,255,255,0.00) 55%,
+                rgba(212,175,55,0.07) 67%, rgba(255,255,255,0.08) 79%, rgba(212,175,55,0.07) 90%, rgba(255,255,255,0.00) 100%);
+      filter: blur(18px) saturate(1.05); animation: sheen 28s linear infinite; }
+    @keyframes sheen { to { transform: rotate(360deg); } }
+    .wrap { max-width: 780px; margin: 0 auto; padding: 20px; }
+    .card { background: var(--card); backdrop-filter: blur(4px); border:1px solid rgba(255,255,255,.09); border-radius:16px; padding:28px; box-shadow: 0 6px 28px rgba(0,0,0,.4); margin-top:30px; text-align:center; }
+    h1 { color: var(--gold); font-size: clamp(26px, 5vw, 40px); margin:0 0 8px; }
+    p { margin: 10px 0; color: var(--white); }
+    .btn { background: var(--gold); color:#111; padding: 12px 20px; border-radius: 12px; text-decoration:none; font-weight:800; display:inline-block; margin: 12px 8px 0; }
+    .sub { color: var(--muted); font-size:14px; }
+    .logo { width: 110px; height:auto; display:block; margin:0 auto 10px; filter: drop-shadow(0 8px 22px rgba(0,0,0,.55)); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <img class="logo" src="dh-logo.png" alt="DH REALTOR logo"/>
+      <h1>Your Seat is Confirmed 🎉</h1>
+      <p>Thanks for registering for the ₹99 webinar by <strong>DH REALTOR</strong>.</p>
+      <p class="sub">We’ll send your joining link on WhatsApp/SMS shortly.</p>
+      <a class="btn" href="https://wa.me/917347517791?text=Hi%20DH%20REALTOR%2C%20I%20have%20paid%20%E2%82%B999%20for%20the%20webinar.%20Please%20confirm%20my%20seat.">📩 Message Us on WhatsApp</a>
+      <a class="btn" href="index.html">⬅ Back to Landing Page</a>
+    </div>
+  </div>
+</body>
+</html>
